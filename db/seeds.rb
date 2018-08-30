@@ -16,3 +16,7 @@ speaker.save
 
 speaker = Speaker.new(first_name: "Wolly", last_name: "Luck", email: "Wolly.Luck@gmail.com")
 speaker.save
+
+Meeting.create({title: "Starbucks", agenda: "New Frappacino", time: "10:30 AM"})
+
+Meeting.create({title: "Target", agenda: "Toys", time: "8 AM"})

@@ -3,4 +3,5 @@ json.array! @meeting.each do |meeting|
   json.title meeting.title
   json.agenda meeting.agenda
   json.time meeting.time
+  json.remote meeting.remote
 end

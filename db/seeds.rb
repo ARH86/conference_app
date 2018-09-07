@@ -1,22 +1,17 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-Speaker.create({first_name: "Dani", last_name: "Zaghian", email: "danielle@actualize.co"})
-
-
-speaker = Speaker.new(first_name: "Joe", last_name: "Pop", email: "JoeP@gmail.com")
-speaker.save
-
-speaker = Speaker.new(first_name: "Doug", last_name: "Jones", email: "DougJ@gmail.com")
-speaker.save
-
-speaker = Speaker.new(first_name: "Wolly", last_name: "Luck", email: "Wolly.Luck@gmail.com")
-speaker.save
-
-Meeting.create({title: "Starbucks", agenda: "New Frappacino", time: "10:30 AM"})
-
-Meeting.create({title: "Target", agenda: "Toys", time: "8 AM"})
+# Meeting.create!([
+#   {title: "Tyson Foods", agenda: "Talks about the aquisition", time: "3:00 PM", location: nil, remote: false},
+#   {title: "Apple", agenda: "Talk about the new iphone release", time: "1:00 PM", location: nil, remote: false},
+#   {title: "Toyota", agenda: "Taking about taking the company private", time: "2:00 PM", location: nil, remote: false},
+#   {title: "Starbucks", agenda: "New Frappacino", time: "10:30 AM", location: nil, remote: false},
+#   {title: "Target", agenda: "Toys", time: "8 AM", location: nil, remote: false}
+# ])
+Conference.create!([
+  {people: "Dani Zaghian", location: "123 Main St. USA", time: "Monday"},
+  {people: "Joe Pop", location: "123 Main St. USA", time: "Monday"},
+  {people: "Doug Jones", location: "215 W Ohio St. #300, Chicago, Il", time: "Sunday"},
+  {people: "Wolly Luck", location: "123 Main St. USA", time: "Monday"},
+  {people: "Dani Zaghian", location: "555 McCalister Dr.", time: "Thursday"},
+  {people: "Joe Pop", location: "123 Main St. USA", time: "Wednesday"},
+  {people: "Doug Jones", location: "123 Main St. USA", time: "Monday"},
+  {people: "Wolly Luck", location: "123 Main St. USA", time: "Monday"}
+])

@@ -1,0 +1,1 @@
+json.partial! @conference, partial: 'conference', as: :conference

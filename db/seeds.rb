@@ -1,10 +1,10 @@
-# Meeting.create!([
-#   {title: "Tyson Foods", agenda: "Talks about the aquisition", time: "3:00 PM", location: nil, remote: false},
-#   {title: "Apple", agenda: "Talk about the new iphone release", time: "1:00 PM", location: nil, remote: false},
-#   {title: "Toyota", agenda: "Taking about taking the company private", time: "2:00 PM", location: nil, remote: false},
-#   {title: "Starbucks", agenda: "New Frappacino", time: "10:30 AM", location: nil, remote: false},
-#   {title: "Target", agenda: "Toys", time: "8 AM", location: nil, remote: false}
-# ])
+Meeting.create!([
+  {title: "Tyson Foods", agenda: "Talks about the aquisition", time: "3:00 PM", location: nil, remote: false},
+  {title: "Apple", agenda: "Talk about the new iphone release", time: "1:00 PM", location: nil, remote: false},
+  {title: "Toyota", agenda: "Taking about taking the company private", time: "2:00 PM", location: nil, remote: false},
+  {title: "Starbucks", agenda: "New Frappacino", time: "10:30 AM", location: nil, remote: false},
+  {title: "Target", agenda: "Toys", time: "8 AM", location: nil, remote: false}
+])
 Conference.create!([
   {people: "Dani Zaghian", location: "123 Main St. USA", time: "Monday"},
   {people: "Joe Pop", location: "123 Main St. USA", time: "Monday"},

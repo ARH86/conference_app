@@ -4,3 +4,4 @@ json.location conference.location
 json.time conference.time
 json.gender conference.gender
 json.age conference.age
+json.email conference.email

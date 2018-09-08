@@ -16,6 +16,7 @@ def index
                            time: params[:time],
                            gender: params[:gender],
                            age: params[:age],
+                           email: params[:email],
                            location: params[:location]
                            )
     
@@ -33,6 +34,7 @@ def index
     @conference.location = params[:locaton] || @conference.location
     @conference.gender = params[:gender] || @conference.gender
     @conference.age = params[:age] || @conference.age
+    @conference.email = params[:email] || @conference.email
 
     if @conference.save
       render 'show.json.jbuilder'

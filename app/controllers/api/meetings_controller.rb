@@ -1,6 +1,6 @@
 class Api::MeetingsController < ApplicationController
   def index
-    @meeting = Meeting.all
+    @meeting = Meeting.where(remote: true)
     render 'index.json.jbuilder'
   end
 

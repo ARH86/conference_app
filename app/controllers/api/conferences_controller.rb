@@ -1,7 +1,7 @@
 class Api::ConferencesController < ApplicationController
 
 def index
-    @conferences = Conference.all
+    @conferences = Conference.all.order(:age :desc)
     render 'index.json.jbuilder'
   end
 
